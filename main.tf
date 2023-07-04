@@ -5,7 +5,7 @@ resource "aws_ssm_parameter" "thibs" { # changer bobby
 }
 
 resource "aws_instance" "web" {
-  ami           = "${data.aws_ami.ubuntu.id}"
+  ami           = "ami-0786f5bc3943ad52d"
   instance_type = "t2.micro"
   tags = {
     Name = "HelloWorld"
